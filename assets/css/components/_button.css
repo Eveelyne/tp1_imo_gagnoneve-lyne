@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 1rem;
+  background-color: var(--color-tertiary);
+  padding: 1rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: 800;
+}
+
+.btn--close {
+  color: var(--color-tertiary);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background-color: rgba(61, 47, 0, 0.6);
+  transition: all 0.2s ease-in-out
+}

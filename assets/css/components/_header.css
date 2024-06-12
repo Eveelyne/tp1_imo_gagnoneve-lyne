@@ -1,0 +1,140 @@
+.header__logo img {
+  max-width: 4rem;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.6rem;
+  padding: 1rem;
+  min-height: 4rem;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 246, 217, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 1;
+  border-bottom: solid var(--color-tertiary) 2px;
+}
+
+.header__left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: center;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__nav--mobile {
+  background-color: var(--color-primary);
+  height: 100%;
+  max-width: min(30rem, calc(100% - 3rem));
+}
+
+.dialog[open] .header__nav--mobile {
+  animation: slideInLeft 0.3s forwards;
+}
+
+.dialog[closing] .header__nav--mobile {
+  animation: slideOutLeft 0.3s forwards;
+}
+
+.header__nav--mobile .nav__items {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1rem;
+  height: 100%;
+  position: relative;
+}
+
+.nav__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  color: var(--color-tertiary);
+  font-weight: 900;
+  background-color: var(--color-secondary);
+}
+
+.nav__items {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav__items a {
+  font-weight: 800;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s ease-out;
+}
+
+.nav__items a:hover {
+  border-bottom: 2px solid var(--color-tertiary);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {  
+  .header__logo {
+    max-width: 5rem;
+  }
+
+  .header__content {
+    gap: 1rem;
+    flex-direction: row;
+    padding: 0.5rem;
+  }
+
+  .header__left, .header__right {
+    gap: 1rem;
+  }
+
+  .header__nav {
+    display: flex;
+  }
+
+  .header__menu-icon {
+    display: none;
+  }
+
+  .header__nav--mobile.visible {
+    display: none;
+  }
+
+  header ul li a {
+    font-size: 0.8rem;
+    padding: 1rem 0.5rem;
+  }
+
+  header ul {
+    padding: 0;
+  }
+
+  .header__logo img {
+    max-width: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header ul li a {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./favicon-32x32.png"> 
+    <link rel="stylesheet" href="./assets/css/theme/_fonts.css">
+    <link rel="stylesheet" href="./assets/css/theme/_animation.css">
+    <link rel="stylesheet" href="./assets/css/theme/_default.css">
+    <link rel="stylesheet" href="./assets/css/components/_button.css">
+    <link rel="stylesheet" href="./assets/css/components/_header.css">
+    <link rel="stylesheet" href="./assets/css/components/_footer.css">
+    <link rel="stylesheet" href="./assets/css/components/_banner.css">
+    <link rel="stylesheet" href="./assets/css/components/_dialog.css">
+    <link rel="stylesheet" href="./assets/css/components/card-products.css">
+    <link rel="stylesheet" href="./assets/css/components/_search.css">
+
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/dialog.js" defer></script>
+    <script src="./assets/js/search.js" defer></script>
+    <script src="./assets/js/listrow.js" defer></script>
+    <script src="https://kit.fontawesome.com/8251248775.js" crossorigin="anonymous" defer></script>
+    <title>TL01 - Interface mobile</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__content">
+        <div class="header__left">
+          <nav class="header__nav">
+            <ul class="nav__items">
+              <li><a>Accueil</a></li>
+              <li><a>Articles</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Histoire</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__logo">
+          <a href="#"><img src="./assets/images/blabla--seul.png" alt="Logo Blabla"></a>
+        </div>
+        <div class="header__right">
+          <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Rechercher">
+          </div>
+            <button data-dialog="#menu-mobile">
+            <img class="header__menu-icon" src="./assets/icons/menu.svg">
+          </button>
+        </div>
+      </div>
+      <div id="menu-mobile" class="dialog" aria-role="dialog">
+        <nav class="header__nav--mobile">
+          <div class="nav__header">
+            <button data-dialog="#menu-mobile" class="btn--close">X</button>
+          </div>
+          <div class="nav__content">
+            <ul class="nav__items">
+              <li><a>Accueil</a></li>
+              <li><a>Articles</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Histoire</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="banner">
+        <div class="banner__left">
+          <div class="banner__content">
+            <h1>BLÅblå : <span class="">les meilleures nouvelles que vous ne vouliez pas connaître.</span></h1>
+            <button class="btn">Commencez å feuilleter</button>
+          </div>
+        </div>
+        <div class="banner__right">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/bahaus-cafe.png">
+            <img class="banner__img" src="./assets/images/bahaus-cafe-sm.png" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="main-articles">
+        <div class="container__counter-toggle">
+          <div class="btns__toggle--grid-list">
+              <button class="btn_grid-view"><i class="fa-solid fa-grip"></i>Grille</button>
+              <button class="btn_list-view"><i class="fa-solid fa-grip-lines"></i>Liste</button>
+          </div>
+          <div class="counter__articles-found">
+            <p>Articles trouvés : <span class="nb-articles"></span></p>
+          </div>
+        </div>
+        <div class="best-products">
+          <!-- Cartes -->
+        </div>
+        <div id="details" class="dialog" aria-role="dialog">
+          <div class="details-top-header">
+            <button data-dialog="#details" class="btn--close">X</button>
+          </div>
+          <div class="details-container">
+              <!-- Cartes détails -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>© Copyright Eve-Lyne Gagnon | Interface Mobile | 582-AGR-LI | <time datetime="2024-06-14"> &nbsp;14 juin 2024</time></span>
+    </footer>
+  </body>
+</html>

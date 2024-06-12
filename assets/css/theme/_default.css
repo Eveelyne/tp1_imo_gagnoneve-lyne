@@ -1,0 +1,57 @@
+:root {
+  --color-primary: rgb(255, 246, 217);
+  --color-secondary: rgb(255, 217, 92);
+  --color-tertiary: rgb(61, 47, 0);
+  --color-accent: #FFD95C;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  color: var(--color-tertiary);
+  background-color: var(--color-primary);
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--color-primary);
+}
+
+ul {
+  padding: 1rem;
+}
+
+::selection {
+  background-color: black;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px){
+  main {
+    align-items: center;
+  }
+}
