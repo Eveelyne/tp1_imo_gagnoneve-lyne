@@ -80,7 +80,7 @@ const products = [
   },
   {
     title: "Le chat n'est jamais sorti du sac, n'y étant jamais entré.",
-    img: "/assets/images/cat.avif",
+    img: "/assets/images/cat.webp",
     shortDesc: "On s'en va chercher le chien, pour sortir le chat...",
     id: "7",
     longDesc: "Le chat n'est jamais sorti du sac, tout simplement parce qu'il n'y est jamais entré. En gros, on parle ici de quelque chose qui n'a jamais été un secret ou un mystère. C'est comme si on disait qu'il n'y avait jamais eu de surprise à découvrir. Bref, rien de caché, rien de dévoilé. C'est juste une façon de dire qu'il n'y avait rien à voir dès le début.",
@@ -102,7 +102,7 @@ const products = [
   },
   {
     title: "Nouveau mot dans la langue française : gymmer.",
-    img: "/assets/images/gym.webp",
+    img: "/assets/images/gym.png",
     shortDesc: "Le verbe tant attendu des passionnés de fitness enfin arrivé ! Je gymme, tu gymmes...",
     id: "9",
     longDesc: "Un nouveau mot débarque dans la langue française : 'gymmer'. Directement tiré de l'anglais, ce terme décrit quelqu'un qui va régulièrement à la salle de sport. En gros, 'gymmer' signifie faire du sport en salle. Avec la mode actuelle de rester en forme et en bonne santé, ce mot est devenu super populaire parmi les amateurs de fitness. Que ce soit les jeunes ou les adultes, tout le monde commence à utiliser 'gymmer'. Ce mot reflète bien notre époque où prendre soin de son corps et de sa santé est devenu une priorité pour beaucoup.",
