@@ -5,9 +5,10 @@
 const btnsDialogTrigger = document.querySelectorAll('button[data-dialog]');
 const dialogs = document.querySelectorAll('.dialog');
 
+/** e est au moin un objet de type Event*/
 /**
  * 
- * @param {object} e
+ * @param {Event} e
  * @description Fonction fermant le dialogue et retire l'événement clic.
  */
 
@@ -20,9 +21,11 @@ function closingDialog(e) {
     dialog.removeEventListener('animationend', closingDialog);
 }
 
+/** dialog est au moins un HTMLElement */
+
 /**
  * 
- * @param {string} dialog 
+ * @param {HTMLElement} dialog 
  * @description Fonction ajoutant l'attribut de fermeture au dialogue et ajoute l'événement clic.
  */
 

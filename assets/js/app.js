@@ -165,9 +165,10 @@ function productToHtml(product) {
   return cardProduct;
 }
 
+/** product n'est pas bien typé. Ce n'est pas un tableau */
 /**
  * 
- * @param {Product[]} product 
+ * @param {Product} product 
  * @returns {HTMLDivElement}
  * @description Création des éléments des détails des articles (lorsque cliqués).
  */
